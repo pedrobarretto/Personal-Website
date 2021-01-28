@@ -1,0 +1,286 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#mainNavbar a:hover {
+  cursor: pointer;
+}
+
+.bg-dark {
+  transition: background-color 0.2s ease-out;
+}
+
+.front-page img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .front-page img {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+
+.front-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20rem;
+  padding: 0 15%;
+  color: white;
+}
+
+@media (max-width: 728px) {
+  .front-text {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-height: 728px) {
+  .front-text {
+    margin-top: 6rem;
+  }
+
+  .front-text h1 {
+    font-size: 19px;
+  }
+
+  .front-text p {
+    font-size: xx-small;
+  }
+}
+
+.front-text h1 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+.front-text p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.front-text a {
+  color: white;
+}
+
+.front-text a:hover {
+  text-decoration: none;
+}
+
+.goal-container {
+  color: white;
+  height: 900px;
+  width: 100%;
+  top: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal-text {
+  padding: 0 15%;
+}
+
+.goal-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 30px;
+  padding: 5% 0;
+}
+
+.goal-text p {
+  font-size: 20px;
+}
+
+.goal-text p a {
+  color: white;
+}
+
+.goal-text p a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 5% 0;
+}
+
+.work a {
+  color: white;
+}
+
+.work a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.work div {
+  margin-right: 7%;
+}
+
+.work div:last-child {
+  margin-right: 0;
+}
+
+table {
+  color: #212529 !important;
+}
+
+table a {
+  color: #212529;
+}
+
+table a:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+.setup-container {
+  color: #212529;
+  background-color: white;
+  height: 800px;
+  top: 100%;
+  font-size: 20px;
+  padding: 0 15%;
+
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#setup-title {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-bottom: 2em;
+}
+
+.setup {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 5%;
+}
+
+.setup div {
+  margin-right: 3%;
+}
+
+.setup div:last-child {
+  margin-right: 0;
+}
+
+.contact-container {
+  background-color: #212529;
+  color: white;
+  height: 90px;
+  top: 100%;
+  font-size: 20px;
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-container ul {
+  padding-top: 20px;
+}
+
+.contact-container ul li {
+  display: inline;
+  list-style: none;
+  border-right: 1px solid white;
+  padding: 0 20px;
+}
+
+.contact-container ul li:last-child {
+  border-right: none;
+}
+
+.contact-container ul li a {
+  color: white;
+}
+
+.contact-container ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .contact-container {
+    display: none;
+  }
+}
+
+@media (max-width: 728px) {
+  .goal-text h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .goal-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .goal-text {
+    padding: 0 10%;
+  }
+
+  .goal-container {
+    height: 1300px;
+  }
+
+  .work {
+    flex-direction: column;
+    padding: 5% 0;
+  }
+
+  .setup-container {
+    height: 1400px;
+    padding: 0 10%;
+  }
+
+  .setup-container p {
+    text-align: justify;
+  }
+
+  .setup {
+    flex-direction: column;
+  }
+
+  .setup div {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  .setup div:last-child {
+    margin-bottom: 0;
+  }
+
+  #setup-title {
+    margin-bottom: 1em;
+  }
+}
