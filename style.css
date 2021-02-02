@@ -189,51 +189,6 @@ table a:hover {
   margin-right: 0;
 }
 
-.contact-container {
-  background-color: #212529;
-  color: white;
-  height: 90px;
-  top: 100%;
-  font-size: 20px;
-
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact-container ul {
-  padding-top: 20px;
-}
-
-.contact-container ul li {
-  display: inline;
-  list-style: none;
-  border-right: 1px solid white;
-  padding: 0 20px;
-}
-
-.contact-container ul li:last-child {
-  border-right: none;
-}
-
-.contact-container ul li a {
-  color: white;
-}
-
-.contact-container ul li a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-@media (max-width: 1000px) {
-  .contact-container {
-    display: none;
-  }
-}
-
 @media (max-width: 728px) {
   .goal-text h2 {
     font-size: 20px;
