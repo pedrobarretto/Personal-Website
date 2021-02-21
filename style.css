@@ -2,6 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.valid {
+  color: green;
+}
+
+.unvalid {
+  color: red;
+}
+
 #mainNavbar a:hover {
   cursor: pointer;
 }
@@ -155,7 +163,7 @@ table a:hover {
 .setup-container {
   color: #212529;
   background-color: white;
-  height: 800px;
+  height: 1130px;
   top: 100%;
   font-size: 20px;
   padding: 0 15%;
@@ -189,6 +197,26 @@ table a:hover {
   margin-right: 0;
 }
 
+.contact-container {
+  padding: 2em 0;
+}
+
+.contact-container h3 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+.contact-input {
+  padding: 10px 0;
+}
+
+@media (max-width: 728px) {
+  .setup-container {
+    height: 1600px;
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 728px) {
   .goal-text h2 {
     font-size: 20px;
@@ -214,7 +242,7 @@ table a:hover {
   }
 
   .setup-container {
-    height: 1400px;
+    height: 1900px;
     padding: 0 10%;
   }
 
