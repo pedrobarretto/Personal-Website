@@ -34,7 +34,7 @@
                             <li><a class="dropdown-item" href="https://www.linkedin.com/in/pedrobarretto">Linkedin</a>
                             </li>
                             <li><a class="dropdown-item" href="https://github.com/pedrobarretto">GitHub</a></li>
-                            <li><a class="dropdown-item">pedro@barretto.com.br</a></li>
+                            <li><a class="dropdown-item email-btn">E-mail</a></li>
                         </ul>
                     </li>
                 </div>
@@ -151,7 +151,7 @@
                         </ul>
                     </div>
                     <div id="escritorio">
-                        <h3>Software</h3>
+                        <h3>Sotware</h3>
                         <ul>
                             <li>Davinci Resolve 16</li>
                             <li>Photoscape X</li>
@@ -168,9 +168,44 @@
                     Javascript, já que começei a aprender no final de 2020. Pretendo não deixar tanto Python quanto
                     Arduino de lado, e pensar em projetos com ambos. Por fim, conseguir um estágio na área,
                     para aprender ainda mais.</p>
+
+                <div class="contact-container">
+                    <h3>Me envie um E-mail</h3>
+
+                    <div class="contact">
+                        <div class="contact-input">
+                            <label for="fromName" class="form-label">Seu nome:</label>
+                            <input class="form-control" type="text" id="fromName" placeholder="Nome" required>
+                        </div>
+                        <div class="contact-input email-input">
+                            <label for="email" class="form-label">Seu e-mail:</label>
+                            <input class="form-control" type="email" id="email" placeholder="E-mail principal" required>
+                            <span id="email-text"></span>
+                        </div>
+                        <div class="contact-input phone-input">
+                            <label for="message" class="form-label">Sua mensagem:</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="3"
+                                placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="ok-msg">
+                            <!-- <span>Obrigado pela mensagem!</span> -->
+                        </div>
+                        <div class="contact-input">
+                            <button class="btn btn-dark" id="send-email">Enviar</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_R4ETr8vFotgng9Kb7Euog");
+        })();
+    </script>
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
